@@ -28,11 +28,53 @@ div.desc {
   text-align: center;
 }
 
+.itemName {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border: 15px solid black;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-family: "Lucida Console";
+  text-align: center;
+}
+
+.priceTag {
+  color: black;
+  padding: 16px 32px;
+  font-size: 14px;
+  font-family: "Lucida Console";
+  text-align: center;
+}
+
+.buyButton {
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 16px 32px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: "Lucida Console";
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
 .responsive {
   padding: 0 0px;
+  background-color: #DCDCDC;
   float: left;
-  width: 20.0%;
-  margin: 12px 12px;
+  width: 23.0%;
+  margin: 5px 5px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -49,7 +91,9 @@ div.desc {
 }
 
 .container {
-  margin: 0 auto;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto;
   width: 50%;
 }
 
