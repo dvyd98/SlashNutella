@@ -53,6 +53,7 @@ mat-dialog-container#modal-component {
   font-family: "Lucida Console";
   width: 185px;
   height: 75px;
+  cursor: pointer;
 }
 
 #modal-cancel-button {
@@ -62,8 +63,8 @@ mat-dialog-container#modal-component {
   font-family: "Lucida Console";
   width: 185px;
   height: 75px;
+  cursor: pointer;
 }
-
 
 table, th, td {
   border: 1px solid black;
