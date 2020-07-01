@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { MatDialogRef } from '@angular/material/dialog';
+
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
@@ -7,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ModalComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialogRef: MatDialogRef<ModalComponent>) { }
 
   ngOnInit(): void {
+  }
+
+  actionFunction() {
+    this.closeModal();
+  }
+
+  closeModal() {
+    this.dialogRef.close();
   }
 
 }
